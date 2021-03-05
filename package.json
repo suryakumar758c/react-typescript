@@ -1,0 +1,63 @@
+{
+  "name": "react-ts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.14",
+    "@types/react": "^17.0.0",
+    "@types/react-redux": "^7.1.12",
+    "@types/react-router-dom": "^5.1.6",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "generate-template-files": "^3.0.0",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^6.13.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^4.1.3",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "cross-env PORT=4200 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "generate-component": "cross-env type=Component node generate-files/generate.js",
+    "generate-redux-action": "cross-env type=Redux-Action node generate-files/generate.js",
+    "generate-redux-reducer": "cross-env type=Redux-Reducer node generate-files/generate.js",
+    "generate-types": "cross-env type=Types node generate-files/generate.js",
+    "generate-redux": "cross-env type=Redux node generate-files/generate.js",
+    "generate-full-component": "cross-env type=Full-Component node generate-files/generate.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-dom": "^17.0.0",
+    "cross-env": "^7.0.3"
+  }
+}

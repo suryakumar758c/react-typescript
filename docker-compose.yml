@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  yarn:
+    container_name: react_ts
+    environment:
+      FUNCTIONS_WORKER_RUNTIME: node
+      WEBSITE_NODE_DEFAULT_VERSION: 12.18.4
+    image: react-ts/react-ts-app
+    ports:
+      - 4200:4200
+    restart: always
